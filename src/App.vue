@@ -21,26 +21,26 @@ const playBgVideo = () => {
 <template>
   <div class="main" @click="playBgVideo">
     <!-- 背景 -->
-    <video ref="bgVideoRef" :src="Video6" autoplay loop class="bg"></video>
+    <video ref="bgVideoRef" :src="Video6" autoplay loop class="bg" :controls="false"></video>
     <img class="xy" :src="TextImg" alt="心雨一定会稳稳地幸福呀！">
     <div class="cubeBox">
       <!-- 小立方体 -->
       <ul class="cube">
-        <li><video :src="Video1" autoplay loop muted></video></li>
-        <li><video :src="Video2" autoplay loop muted></video></li>
-        <li><video :src="Video3" autoplay loop muted></video></li>
-        <li><video :src="Video4" autoplay loop muted></video></li>
-        <li><video :src="Video5" autoplay loop muted></video></li>
-        <li><video :src="Video6" autoplay loop muted></video></li>
+        <li><video :src="Video1" autoplay loop muted :controls="false"></video></li>
+        <li><video :src="Video2" autoplay loop muted :controls="false"></video></li>
+        <li><video :src="Video3" autoplay loop muted :controls="false"></video></li>
+        <li><video :src="Video4" autoplay loop muted :controls="false"></video></li>
+        <li><video :src="Video5" autoplay loop muted :controls="false"></video></li>
+        <li><video :src="Video6" autoplay loop muted :controls="false"></video></li>
       </ul>
       <!-- 大立方体 -->
       <ul class="cube bigCube">
-        <li><video :src="Video7" autoplay loop muted></video></li>
-        <li><video :src="Video8" autoplay loop muted></video></li>
-        <li><video :src="Video9" autoplay loop muted></video></li>
-        <li><video :src="Video10" autoplay loop muted></video></li>
-        <li><video :src="Video10" autoplay loop muted></video></li>
-        <li><video :src="Video10" autoplay loop muted></video></li>
+        <li><video :src="Video7" autoplay loop muted :controls="false"></video></li>
+        <li><video :src="Video8" autoplay loop muted :controls="false"></video></li>
+        <li><video :src="Video9" autoplay loop muted :controls="false"></video></li>
+        <li><video :src="Video10" autoplay loop muted :controls="false"></video></li>
+        <li><video :src="Video10" autoplay loop muted :controls="false"></video></li>
+        <li><video :src="Video10" autoplay loop muted :controls="false"></video></li>
       </ul>
     </div>
   </div>
@@ -53,6 +53,7 @@ const playBgVideo = () => {
   perspective: 800;
   background: #000;
 }
+
 
 .cubeBox {
   width: 200px;
