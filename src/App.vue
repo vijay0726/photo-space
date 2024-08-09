@@ -35,7 +35,8 @@ const playBgVideo = () => {
 <template>
   <div class="main" @click="playBgVideo">
     <!-- 背景 -->
-    <video ref="bgVideoRef" :src="Video6" autoplay loop class="bg" :controls="false"></video>
+    <!-- <video ref="bgVideoRef" :src="Video6" autoplay loop class="bg" :controls="false"></video> -->
+    <img class="bg" :src="img11" alt="心雨一定会稳稳地幸福呀！">
     <img class="xy" :src="TextImg" alt="心雨一定会稳稳地幸福呀！">
     <div class="cubeBox">
       <!-- 小立方体 -->
